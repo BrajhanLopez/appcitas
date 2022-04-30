@@ -6,7 +6,7 @@ import { useState } from 'react';
 
 function App() {
   const colors = ["red", "blue", "Gray", "DarkSlateGray", "IndianRed", "LightPink", "OrangeRed", "Gold", "Orchid", "LimeGreen", "LightBlue"]
-  const [color, setcolor] = useState(0)
+  const [color, setcolor] = useState(Math.round(Math.random() * ((colors.length - 1) - 0) + 0))
   let end
   function changebackground() {
     //const colors = ["red", "blue", "black", "White"]
